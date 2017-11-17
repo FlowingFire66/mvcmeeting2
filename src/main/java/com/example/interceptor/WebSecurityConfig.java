@@ -41,6 +41,7 @@ public class WebSecurityConfig  extends WebMvcConfigurerAdapter{
         addInterceptor.excludePathPatterns("/common/*");
         addInterceptor.excludePathPatterns("/register**");
         addInterceptor.excludePathPatterns("/doregister**");
+        addInterceptor.excludePathPatterns("/");
         // 拦截配置
         addInterceptor.addPathPatterns("/**");
     }

@@ -5,7 +5,9 @@
     <title>Insert title here</title>
 </head>
 <body>
-错误信息：${msg!""}
+<#if msg??>错误信息：${msg}
+</#if>
+
 <form action="/doregister" method="post">
     <p>账号：<input type="text" name="username" value="admin"/></p>
     <p>密码：<input type="text" name="password" value="123456"/></p>
